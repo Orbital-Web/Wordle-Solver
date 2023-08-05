@@ -37,7 +37,7 @@ def create_filter(word: str, result: str) -> dict:
         elif flag.islower():
             yellows[i] = letter
         
-        # blacks (only black words not in yellow are completely excluded)
+        # blacks (only black letters not in yellow are completely excluded)
         else:
             if letter in yellows:
                 yellows[i] = letter
