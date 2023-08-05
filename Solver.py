@@ -112,12 +112,6 @@ def pick_word(wordlist: list[str]) -> str:
 if __name__ == '__main__':
     wordlist = load_words()
     
-    print("\nHow to use:")
-    print("  The program will send a word to guess. Once you enter the word, type the result in the console.")
-    print("  Green letters should be typed in caps")
-    print("  Yellow letters should be typed in lowercase")
-    print("  Black letters should be replaced with a period '.'\n")
-    
     # initial guess
     guess = pick_word(wordlist)
     print(f"Guess:  {guess}, {len(wordlist)} possible words")
